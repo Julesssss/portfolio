@@ -2,9 +2,9 @@
 name: Jules Rosser
 job_title: Android Engineer
 email: julianrosser91@gmail.com
-description: I am an Android Engineer with four years professional experience architecting modern Android applications, with an expertise in Kotlin, MVVM, RxJava and Dagger.
+description: Android Engineer with four years professional experience architecting modern Android applications, with an expertise in Kotlin, MVVM, RxJava and Dagger.
 avatar: https://julesssss.github.io/assets/images/profile_image.jpg
-favicon: /favicon.ico # TODO
+favicon:
 twitter_handler:
 analytics_code: # UA-XXXXXXX-2
 disqus: # your_disqus_site
@@ -40,8 +40,8 @@ social_networks:
 -  { name: applemusic, url: '' }
 
 # Modules Settings
-show_categories: 1
-show_tags: 1
+show_categories: 0
+show_tags: 0
 show_email: 1
 show_rss: 0
 show_comments: 0

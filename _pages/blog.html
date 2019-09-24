@@ -1,0 +1,38 @@
+---
+layout: default
+title:  "Blog"
+permalink: "/blog/"
+order: 1
+---
+
+
+<ul>
+  {% for post in site.posts %}
+
+  <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <ul>
+            <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b, %Y" }}</time></li>
+            {% if site.show_categories == 1 and post.category %}
+                <li class="cats">
+                    {% for category in post.category %}
+                        <a href="{{site.baseurl}}/{{site.category_dir}}/{{category}}/">{{ category }}</a>
+                    {% endfor %}
+                </li>
+            {% endif %}
+        </ul>
+        <h2 itemprop="name headline"><a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+    </header>
+
+    <li>
+      <div class="post-content">
+          {{ post.excerpt }}
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">Read More</a></p>
+      </div>
+    </li>
+
+  </article>
+
+  {% endfor %}
+</ul>

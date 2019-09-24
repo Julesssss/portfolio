@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -21,8 +21,9 @@ layout: default
 
     <div class="post-content">
         {{ page.content }}
+        <li><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b, %Y" }}</time></li>
     </div>
-
+<!--
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
@@ -39,7 +40,7 @@ layout: default
             </ul>
         </div>
         {% endif %}
-    </footer>
+    </footer> -->
 </article>
 
 {% if page.comments and site.show_comments == 1 %}
