@@ -181,6 +181,11 @@
 		}
 	}
 
+	img[src*="#appscreen"] {
+	   width:320px;
+	   height:550px;
+	 }
+
 	.comments { position: relative; margin: 40px 0 0; padding: 40px; border: 1px solid $grey-color-lightest; background: $white; box-shadow: 0 2px 3px rgba($black,.05); }
 
 	.pagination { @include flexbox(); @include justify-content(space-between); position: relative; margin: 40px 0 0;

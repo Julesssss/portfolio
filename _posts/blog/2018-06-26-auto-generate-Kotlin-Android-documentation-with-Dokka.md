@@ -1,9 +1,11 @@
 ---
 layout: page
 author: jules
-excerpt: I’ve recently been trying to write better documentation, and after discovering how simple this was for Java projects using Android Studio was upset to find out that this doesn’t work for Android projects written in Kotlin. Until a couple of minutes later when I found Dokka, Jet-brain's documentation engine for Kotlin. For anyone unlucky enough to not be completely free from Java, you’ll be pleased to know it also works with mixed Java/Kotlin projects.
-category: kotlin
+excerpt: I’ve recently been trying to write better documentation, and after discovering how simple this was for Java projects using Android Studio was upset to find out that this doesn’t work for Android projects written in Kotlin. Until a couple of minutes later when I found Dokka, Jet-brain's documentation engine for Kotlin. For anyone unlucky enough to not be completely free from Java, you’ll be pleased to know it also works with mixed Java/Kotlin projects.  
+category: blog
 ---
+
+*22nd August, 2018*
 
 ![](https://cdn-images-1.medium.com/max/2000/1*4r_QNds14Tjv8eddEofoGg.png)
 
@@ -17,8 +19,6 @@ Until a couple of minutes later when I found [Dokka](https://github.com/Kotlin/d
 
 Unfortunately, good documentation doesn’t write itself, so the first step is to comment your code properly. Dokka will pick up comments from classes, methods and properties as well as highlighting param, return and other tag comments.
 
- <iframe src="https://medium.com/media/c6bf5ac69c3d3124834ec96a2f7add27" frameborder=0></iframe>
-
 Thankfully, that is the only precondition that’s necessary in order to use Dokka. Once we’ve setup the Dokka plugin and specified a few plugin preferences, we’ll be able to run a Gradle task which exports nicely organised, hyperlinked documentation in a couple of different formats. It’s that simple! Lets get started…
 
 ## Plugin Setup
@@ -26,55 +26,56 @@ Thankfully, that is the only precondition that’s necessary in order to use Dok
 *For those with no patience, [this commit](https://github.com/Julesssss/Android-MVVM/commit/d205ab6c315f9ada064b93ee80b47f86a841accd) shows the few necessary changes we need to make.*
 
 First, in the **project** level **build.gradle** file, add the following classpath dependency (using a Dokka version variable if desired):
-```
-    buildscript {
 
+
+    buildscript {
         ext {
-            **dokkaVersion = '0.9.17'**
+          dokkaVersion = '0.9.17'
         }
 
         repositories {
-            jcenter()
+          jcenter()
         }
 
         dependencies {
-            **classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokkaVersion"**
+          classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokkaVersion"
         }
-
     }
-```
-Now, for each module you would like to generate documentation for, add this plugin beneath the Kotlin kapt plugin in the **build.gradle **file. Followed by the a Dokka configuration block.
 
-*This will most likely be the **app **module build.gradle for single module projects.*
+Now, for each module you would like to generate documentation for, add this plugin beneath the Kotlin kapt plugin in the **build.gradle** file. Followed by the a Dokka configuration block.
 
-    apply plugin: 'kotlin-android-extensions'
-    apply plugin: 'kotlin-kapt'
-    **apply plugin: 'org.jetbrains.dokka-android'**
+*This will most likely be the **app** module build.gradle for single module projects.*
 
-    ...
+
+  apply plugin: 'kotlin-android-extensions'
+  apply plugin: 'kotlin-kapt'
+  apply plugin: 'org.jetbrains.dokka-android'
+
+  ...
 
     android {
 
         ...
-        **dokka {
+
+        dokka {
             outputFormat = 'html'
             outputDirectory = "$buildDir/javadoc"
-        }**
+        }
 
     }
 
-* **outputFormat: **We have a choice of [6 output formats](https://github.com/Kotlin/dokka#output-formats) including html, javadoc, and a few types of markdown.
+> **outputFormat:** We have a choice of [6 output formats](https://github.com/Kotlin/dokka#output-formats) including html, javadoc, and a few types of markdown.
 
-* **outputDirectory: **Choose the location you would like the documentation to be built to.
+> **outputDirectory:** Choose the location you would like the documentation to be built to.
 
 You can find a list of all Dokka config options on the [Documentation page,](https://github.com/Kotlin/dokka) but here are a few useful examples to get you started:
-```
+
     // Do not output deprecated members
     skipDeprecated = true
 
     // Emit warnings about not documented members.
     reportUndocumented = true
-```
+
 ## Building the docs
 
 That’s all! After syncing your project you should see a new Gradle task which will generate the documentation for you.
@@ -93,10 +94,8 @@ Open the **index.html** file in a browser and admire your new documentation, org
 
 ![An example package, with clearly defined comments](https://cdn-images-1.medium.com/max/2000/1*J9JZ35JaoQOpWXIkc4tNlg.png)
 
-![[*Here](https://github.com/Julesssss/Android-MVVM/blob/master/documentation/index.md) is an example of markdown formatted documentation hosted on a public GitHub repository*](https://cdn-images-1.medium.com/max/2000/1*-VzQsFjFmYqoDKUrlZJLgQ.png)
+![*Here](https://github.com/Julesssss/Android-MVVM/blob/master/documentation/index.md) is an example of markdown formatted documentation hosted on a public GitHub repository*](https://cdn-images-1.medium.com/max/2000/1*-VzQsFjFmYqoDKUrlZJLgQ.png)
 
 Now we face the harder problem of getting people to actually read our docs!
 
 *Thanks for reading, please let me know if I’ve missed anything or if you have any tips for using Dokka!*
-
-Also,check out my latest post for help [on managing dependencies in a multi-module project](https://medium.com/@julesrosser/handling-gradle-dependencies-in-multiple-module-android-projects-9e590c3d20dc).

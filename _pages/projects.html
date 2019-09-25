@@ -1,13 +1,12 @@
 ---
 layout: default
-title:  "Blog"
-permalink: "/blog/"
-order: 1
+title:  "Projects"
+permalink: "/projects/"
+order: 0
 ---
 
-
 <ul>
-  {% for post in site.categories.blog %}
+  {% for post in site.categories.project %}
 
   <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -29,6 +28,8 @@ order: 1
       <div class="post-content">
           {{ post.excerpt }}
           <p></p>
+          <img style="width:260px;height:450px;" src="{{ post.image }}" >
+          <p></p>
           <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">Read More</a>
       </div>
     </li>
@@ -37,3 +38,24 @@ order: 1
 
   {% endfor %}
 </ul>
+
+<!--
+### Professional
+
+* Verv Energy
+* Arsenal F.C.
+* F1TV
+
+<!--
+#### Code Implementations & notes
+* [F1TV]({{p.url}}/notes/languages/java/java8-to-java11)
+* frameworks implementation [code](https://github.com/MarioCodes/java-frameworks)
+  * vertx [notes]({{p.url}}/notes/frameworks/java/vertx)
+  * testing frameworks [notes]({{p.url}}/notes/frameworks/java/testing)
+* patterns [code](https://github.com/MarioCodes/java-patterns-implementations) [notes]({{p.url}}/notes/patterns)
+-->
+<!--
+### Personal
+
+* [NASA Photo of the day](https://github.com/Julesssss/Nasa-photo-of-the-day)
+* [Birthday Reminder](https://github.com/Julesssss/BirthdayReminder) -->
