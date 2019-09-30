@@ -14,11 +14,11 @@ Senior Android Developer (Contract)
 Feb 2019 — September 2019  
 London
 
-__Verv Home Energy Assistant__ - Play Store
-- Implemented bluetooth pairing solution for connecting app to IOT device.
+__Verv Home Energy Assistant__
+- Implemented bluetooth on-boarding solution for connecting app to IOT device.
 - Introduced CI/CD pipeline (Docker/Jenkins), including test support, build deployment, KTLint and automated releases.
 - Held technical ownership role for two large cross-platform features, taking responsibility for engineering and business decisions.
-- Introduced best practices for Android; Modularisation, Testing, Gradle build configuration, MVVM.
+- Introduced best practices for Android; Testing, Gradle build configuration, MVVM.
 
 
 #### Ostmodern  
@@ -49,11 +49,11 @@ Android Developer/Consultant
 Feb 2016 — Apr 2017  
 London
 
-__CinemApp (Brandiment)__ - Play Store
+__CinemApp (Brandiment)__
 - Built a cross-platform, location-aware social app for cinema showings using Firebase as a backend.
 - Built native group messaging solution, push notifications, video playback, friend system, and social sign in.
 
-__Delhaize and AB Click2Shop (Delhaize Group)__ - Delhaize Play Store - AB Play Store
+__Delhaize and AB Click2Shop (Delhaize Group)__
 - Maintained two of the largest European supermarket apps in a single code base, partitioned with Gradle configurations.
 - Pitched addition of Material Design and new SDK components to the client, leading to additional client spend.
 
