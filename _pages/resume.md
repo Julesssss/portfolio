@@ -63,5 +63,5 @@ __Delhaize and AB Click2Shop (Delhaize Group)__
 - __Android:__ Kotlin, Java, Gradle, RxJava, Live Data, Dagger2, Koin, Retrofit, Realm, Room, Live Data, Extension Functions, Sealed Classes.
 - __Architecture Patterns:__ MVVM, MVP, Clean Code, Data-binding,  Lifecycle aware view-models, Observer Pattern.
 - __Integrations:__ Firebase Database, Firebase Remote Config, Analytics, AWS Lambda, Fabric, Jenkins, Urban Airship.
-- __Testing:__ JUnit, Espresso, Mockito, TDD.
-- __Productivity:__ Jenkins task configuration, Git flow, GitHub, BitBucket, Dokka, Jira, Confluence, Agile, Scrum, Target Process, Slack
+- __Testing:__ TDD, JUnit, Espresso, Mockito, Mockk.
+- __Productivity:__ Jenkins, Docker, GitFlow, GitHub, BitBucket, Dokka, Jira, Confluence, Agile, Scrum, Target Process, Slack
