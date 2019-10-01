@@ -3,7 +3,7 @@ layout: page
 author: jules
 excerpt: A Kotlin Android app demonstrating a modern architecture consisting of Kotlin, MVVM, RxJava, Koin, LiveData and lifecycle aware ViewModels.
 category: project
-image: https://github.com/Julesssss/Nasa-photo-of-the-day/blob/develop/media/screenshot1.png?raw=true
+image: ../../assets/images/apod-list.png
 ---
 
 <p class="project-type">Personal project</p>
@@ -14,7 +14,8 @@ View state is represented by an immutable data class emitted as a LiveData subsc
 
 [View project on Github](https://github.com/Julesssss/Nasa-photo-of-the-day)
 
-![](https://github.com/Julesssss/Nasa-photo-of-the-day/blob/develop/media/screenshot1.png?raw=true#appscreen)
+![](../../assets/images/apod-list.png#appscreen)
+![](../../assets/images/apod-detail.png#appscreen)
 
 ### Architecture
 
