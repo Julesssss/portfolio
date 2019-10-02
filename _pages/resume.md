@@ -5,6 +5,8 @@ permalink: "/resume/"
 order: 2
 ---
 
+[View as PDF](../assets/files/Jules-Rosser-Resume.pdf)
+
 Enthusiastic engineer with four years experience architecting modern Android applications, with an expertise in Kotlin, MVVM, RxJava and Dagger. Current areas of interest include state management, architectural design, and Reactive programming with Rx.
 
 ## Professional Experience
