@@ -37,7 +37,7 @@ defaults:
       comments: "false"
 
 # Serving
-url: "https://julesssss.github.io"
+url: "https://julesrosser.com"
 baseurl: ""
 
 # Includes
@@ -62,3 +62,4 @@ sass:
 
 plugins:
  - jekyll-sitemap
+ - jekyll-seo-tag

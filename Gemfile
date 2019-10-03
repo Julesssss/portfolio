@@ -20,4 +20,5 @@ group :jekyll_plugins do
     gem "jekyll-paginate", "~> 1.1.0"
     gem 'listen', '~> 3.0'
     gem 'jekyll-sitemap'
+    gem 'jekyll-seo-tag'
 end
