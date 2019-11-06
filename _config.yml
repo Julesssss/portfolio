@@ -13,7 +13,7 @@ home_sidebar: About # String to show as "Home" at the sidebar. It was hardcoded.
 
 # Social Accounts
 social_networks:
--  { name: linkedin, url: 'https://www.linkedin.com/in/julianrosser91/' }
+-  { name: linkedin, url: 'https://www.linkedin.com/in/julesrosser/' }
 -  { name: github, url: 'https://github.com/Julesssss' }
 -  { name: medium, url: 'https://medium.com/@julesrosser' }
 -  { name: stack-overflow, url: 'https://stackoverflow.com/users/4160784' }
