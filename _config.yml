@@ -50,9 +50,9 @@ exclude: ["CLAUDE.md", ".claude/"]
 permalink: /:categories/:title.html
 category_dir: categories
 
-# Pagination
-paginate: 10
-paginate_path: "/page:num/"
+# Pagination (disabled)
+# paginate: 10
+# paginate_path: "/page:num/"
 
 # Conversion
 markdown: kramdown
