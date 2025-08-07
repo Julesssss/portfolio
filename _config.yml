@@ -43,6 +43,9 @@ baseurl: ""
 # Includes
 include: ["_pages"]
 
+# Excludes
+exclude: ["CLAUDE.md", ".claude/"]
+
 # Outputting
 permalink: /:categories/:title.html
 category_dir: categories
