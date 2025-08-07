@@ -1,7 +1,7 @@
 ---
 layout: page
 author: jules
-excerpt: How to use claud with multiple accounts.
+excerpt: How to use Claud with multiple accounts.
 category: blog
 ---
 
