@@ -26,11 +26,13 @@ order: 1
     </header>
 
     <li>
-      <div class="post-content">
-          {{ post.excerpt }}
-          <p></p>
-          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">Read More</a>
-      </div>
+      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: inherit; display: block;">
+        <div class="post-content">
+            {{ post.excerpt }}
+            <p></p>
+            <span role="button" style="color: #3DDB86;">Read More</span>
+        </div>
+      </a>
     </li>
 
   </article>

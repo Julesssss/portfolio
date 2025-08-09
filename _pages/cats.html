@@ -25,15 +25,15 @@ order: 2
     </header>
 
     <li>
-      <div class="post-content">
-          {% if post.image %}
-          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-              <img style="width:260px;height:auto;" src="{{ post.image }}" >
-          </a>
-          <p></p>
-          {% endif %}
-          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">Read More</a>
-      </div>
+      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: inherit; display: block;">
+        <div class="post-content">
+            {% if post.image %}
+            <img style="width:260px;height:auto;" src="{{ post.image }}" >
+            <p></p>
+            {% endif %}
+            <span role="button" style="color: #3DDB86;">Read More</span>
+        </div>
+      </a>
     </li>
 
   </article>
