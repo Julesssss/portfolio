@@ -18,7 +18,7 @@ This is a Jekyll static site generator project structured as follows:
 - **Posts**: Located in `_posts/` with two categories:
   - `_posts/blog/` - Technical blog posts about Android development
   - `_posts/project/` - Project showcases and case studies
-- **Pages**: Static pages in `_pages/` (projects.html, blog.html, resume.md)
+- **Pages**: Static pages in `_pages/` (projects.html, blog.html, cats.html)
 - **Layouts**: HTML templates in `_layouts/` for different content types
 - **Includes**: Reusable components in `_includes/` (sidebar, head, scripts, etc.)
 
@@ -38,7 +38,7 @@ This is a Jekyll static site generator project structured as follows:
 ### Content Structure
 - **Blog posts**: Focus on Android development (Dagger, Data Binding, Gradle, Dokka)
 - **Project posts**: Mobile app showcases with screenshots and technical details
-- **Resume**: PDF download available at `/assets/files/Jules-Rosser-Resume.pdf`
+- **Cats posts**: Cat content with photos
 
 ### Configuration
 - **Site config**: `_config.yml` contains personal info, social links, and Jekyll settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 author: jules
-excerpt: How to use Claud with multiple accounts.
+excerpt: How to use Claude with both personal and work accounts.
 category: blog
 ---
 
