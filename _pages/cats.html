@@ -26,8 +26,12 @@ order: 2
 
     <li>
       <div class="post-content">
-          {{ post.excerpt }}
+          {% if post.image %}
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+              <img style="width:260px;height:auto;" src="{{ post.image }}" >
+          </a>
           <p></p>
+          {% endif %}
           <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">Read More</a>
       </div>
     </li>
